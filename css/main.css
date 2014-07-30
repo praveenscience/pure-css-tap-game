@@ -366,13 +366,14 @@ body {
   height: 10px;
   position: relative;
   background-color: #ebebeb;
-  -webkit-animation: timer 10s linear;
-  -moz-animation: timer 10s linear;
-  -o-animation: timer 10s linear;
-  animation: timer 10s linear;
+  width: 0%;
+  -webkit-animation: timer 10s linear 1s 1 forwards;
+  -moz-animation: timer 10s linear 1s 1 forwards;
+  -o-animation: timer 10s linear 1s 1 forwards;
+  animation: timer 10s linear 1s 1 forwards;
 }
 
-/* line 223, ../sass/_modules.scss */
+/* line 224, ../sass/_modules.scss */
 .game-over {
   background: rgba(0, 0, 0, 0.7);
   text-align: center;
@@ -385,7 +386,7 @@ body {
   animation: show 1s cubic-bezier(.23,.68,.31,1.09) 10s 1 forwards;
 }
 
-/* line 231, ../sass/_modules.scss */
+/* line 232, ../sass/_modules.scss */
 .game-over__title {
   font-size: 40px;
   font-family: tahoma;
@@ -396,7 +397,7 @@ body {
   display: inline-block;
 }
 
-/* line 240, ../sass/_modules.scss */
+/* line 241, ../sass/_modules.scss */
 .game-over__replay {
   color: #fff;
   font-size: 20px;
@@ -405,7 +406,7 @@ body {
   text-decoration: none;
 }
 
-/* line 248, ../sass/_modules.scss */
+/* line 249, ../sass/_modules.scss */
 .header__score-holder {
   width: 65px;
   height: 60px;
@@ -413,7 +414,7 @@ body {
   margin: 10px auto;
 }
 
-/* line 254, ../sass/_modules.scss */
+/* line 255, ../sass/_modules.scss */
 .header__points {
   width: 100%;
   font-size: 50px;
@@ -427,140 +428,140 @@ body {
 }
 
 @-webkit-keyframes show {
-  /* line 267, ../sass/_modules.scss */
+  /* line 268, ../sass/_modules.scss */
   from {
     top: -200%;
   }
 
-  /* line 270, ../sass/_modules.scss */
+  /* line 271, ../sass/_modules.scss */
   to {
     top: 0%;
   }
 }
 
 @-moz-keyframes show {
-  /* line 267, ../sass/_modules.scss */
+  /* line 268, ../sass/_modules.scss */
   from {
     top: -200%;
   }
 
-  /* line 270, ../sass/_modules.scss */
+  /* line 271, ../sass/_modules.scss */
   to {
     top: 0%;
   }
 }
 
 @-o-keyframes show {
-  /* line 267, ../sass/_modules.scss */
+  /* line 268, ../sass/_modules.scss */
   from {
     top: -200%;
   }
 
-  /* line 270, ../sass/_modules.scss */
+  /* line 271, ../sass/_modules.scss */
   to {
     top: 0%;
   }
 }
 
 @keyframes show {
-  /* line 267, ../sass/_modules.scss */
+  /* line 268, ../sass/_modules.scss */
   from {
     top: -200%;
   }
 
-  /* line 270, ../sass/_modules.scss */
+  /* line 271, ../sass/_modules.scss */
   to {
     top: 0%;
   }
 }
 
 @-webkit-keyframes timer {
-  /* line 275, ../sass/_modules.scss */
+  /* line 276, ../sass/_modules.scss */
   from {
     width: 0%;
   }
 
-  /* line 278, ../sass/_modules.scss */
+  /* line 279, ../sass/_modules.scss */
   to {
     width: 100%;
   }
 }
 
 @-moz-keyframes timer {
-  /* line 275, ../sass/_modules.scss */
+  /* line 276, ../sass/_modules.scss */
   from {
     width: 0%;
   }
 
-  /* line 278, ../sass/_modules.scss */
+  /* line 279, ../sass/_modules.scss */
   to {
     width: 100%;
   }
 }
 
 @-o-keyframes timer {
-  /* line 275, ../sass/_modules.scss */
+  /* line 276, ../sass/_modules.scss */
   from {
     width: 0%;
   }
 
-  /* line 278, ../sass/_modules.scss */
+  /* line 279, ../sass/_modules.scss */
   to {
     width: 100%;
   }
 }
 
 @keyframes timer {
-  /* line 275, ../sass/_modules.scss */
+  /* line 276, ../sass/_modules.scss */
   from {
     width: 0%;
   }
 
-  /* line 278, ../sass/_modules.scss */
+  /* line 279, ../sass/_modules.scss */
   to {
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 284, ../sass/_modules.scss */
+  /* line 285, ../sass/_modules.scss */
   .game-wrapp {
     width: 300px;
     height: 410px;
   }
 
-  /* line 288, ../sass/_modules.scss */
+  /* line 289, ../sass/_modules.scss */
   .box {
     width: 67.5px;
     height: 67.5px;
   }
 
-  /* line 292, ../sass/_modules.scss */
+  /* line 293, ../sass/_modules.scss */
   .box5, .box6, .box7, .box8 {
     top: 77.5px;
   }
 
-  /* line 295, ../sass/_modules.scss */
+  /* line 296, ../sass/_modules.scss */
   .box9, .box10, .box11, .box12 {
     top: 155px;
   }
 
-  /* line 298, ../sass/_modules.scss */
+  /* line 299, ../sass/_modules.scss */
   .box13, .box14, .box15, .box16 {
     top: 232.5px;
   }
 
-  /* line 302, ../sass/_modules.scss */
+  /* line 303, ../sass/_modules.scss */
   .box2, .box6, .box10, .box14 {
     left: 77.5px;
   }
 
-  /* line 305, ../sass/_modules.scss */
+  /* line 306, ../sass/_modules.scss */
   .box3, .box7, .box11, .box15 {
     left: 155px;
   }
 
-  /* line 308, ../sass/_modules.scss */
+  /* line 309, ../sass/_modules.scss */
   .box4, .box8, .box12, .box16 {
     left: 232.5px;
   }
