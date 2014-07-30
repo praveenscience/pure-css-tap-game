@@ -521,3 +521,47 @@ body {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  /* line 284, ../sass/_modules.scss */
+  .game-wrapp {
+    width: 300px;
+    height: 410px;
+  }
+
+  /* line 288, ../sass/_modules.scss */
+  .box {
+    width: 67.5px;
+    height: 67.5px;
+  }
+
+  /* line 292, ../sass/_modules.scss */
+  .box5, .box6, .box7, .box8 {
+    top: 77.5px;
+  }
+
+  /* line 295, ../sass/_modules.scss */
+  .box9, .box10, .box11, .box12 {
+    top: 155px;
+  }
+
+  /* line 298, ../sass/_modules.scss */
+  .box13, .box14, .box15, .box16 {
+    top: 232.5px;
+  }
+
+  /* line 302, ../sass/_modules.scss */
+  .box2, .box6, .box10, .box14 {
+    left: 77.5px;
+  }
+
+  /* line 305, ../sass/_modules.scss */
+  .box3, .box7, .box11, .box15 {
+    left: 155px;
+  }
+
+  /* line 308, ../sass/_modules.scss */
+  .box4, .box8, .box12, .box16 {
+    left: 232.5px;
+  }
+}

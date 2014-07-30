@@ -280,5 +280,34 @@
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .game-wrapp{
+        width: 300px;
+        height: 410px;
+    }
+    .box {
+        width: 67.5px;
+        height: 67.5px;
+    }
+    .box5, .box6, .box7, .box8{
+        top: 77.5px;
+    }
+    .box9, .box10, .box11, .box12{
+        top: 155px;
+    }
+    .box13, .box14, .box15, .box16{
+        top: 232.5px;
+    }
+
+    .box2, .box6, .box10, .box14{
+        left: 77.5px;
+    }
+    .box3, .box7, .box11, .box15{
+        left: 155px;
+    }
+    .box4, .box8, .box12, .box16{
+        left: 232.5px;
+    }
+}
 
 
