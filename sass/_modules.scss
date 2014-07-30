@@ -1,0 +1,284 @@
+/*!
+ * Pure CSS tap game
+ * https://github.com/ufis/pure-css-tap-game
+ *
+ * Copyright 2014, Justas Kuizinas
+ * 
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+
+
+
+.game{
+    position: relative;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #ebebeb;
+}
+
+
+#start:target{
+    display: none;
+}
+
+
+.box1, .box2, .box3, .box4{
+    top: 0;
+}
+.box5, .box6, .box7, .box8{
+    top: 110px;
+}
+.box9, .box10, .box11, .box12{
+    top: 220px;
+}
+.box13, .box14, .box15, .box16{
+    top: 330px;
+}
+
+.box1, .box5, .box9, .box13{
+    left:0;
+}
+.box2, .box6, .box10, .box14{
+    left: 110px;
+}
+.box3, .box7, .box11, .box15{
+    left: 220px;
+}
+.box4, .box8, .box12, .box16{
+    left: 330px;
+}
+
+.game-box{
+    cursor: pointer;
+    background-color: #1DE2E2;
+}
+
+.shadow-box1{
+    display: none;
+}
+.input:checked ~ .game .shadow-box1{
+    display: block;
+}
+.game-box-layer2{
+    display: none;
+}
+.input-layer2:checked ~ .game .game-box-layer2{
+    display: block;
+}
+#input14:checked ~ .game .game-box-layer2{
+    display: block;
+}
+#input1:checked ~ .game .shadow-box9,
+#input9:checked ~ .game .shadow-box11,
+#input11:checked ~ .game .shadow-box2,
+#input2:checked ~ .game .shadow-box3,
+#input3:checked ~ .game .shadow-box16,
+#input16:checked ~ .game .shadow-box4,
+#input4:checked ~ .game .shadow-box5,
+#input5:checked ~ .game .shadow-box8,
+#input8:checked ~ .game .shadow-box15,
+#input15:checked ~ .game .shadow-box12,
+#input12:checked ~ .game .shadow-box6,
+#input6:checked ~ .game .shadow-box10,
+#input10:checked ~ .game .shadow-box7,
+#input7:checked ~ .game .shadow-box13,
+#input13:checked ~ .game .shadow-box14,
+#input14:checked ~ .game .shadow-box1,
+#input17:checked ~ .game .shadow-box9,
+#input25:checked ~ .game .shadow-box11,
+#input27:checked ~ .game .shadow-box2,
+#input18:checked ~ .game .shadow-box3,
+#input19:checked ~ .game .shadow-box16,
+#input32:checked ~ .game .shadow-box4,
+#input20:checked ~ .game .shadow-box5,
+#input21:checked ~ .game .shadow-box8,
+#input24:checked ~ .game .shadow-box15,
+#input31:checked ~ .game .shadow-box12,
+#input28:checked ~ .game .shadow-box6,
+#input22:checked ~ .game .shadow-box10,
+#input26:checked ~ .game .shadow-box7,
+#input23:checked ~ .game .shadow-box13,
+#input29:checked ~ .game .shadow-box14,
+#input30:checked ~ .game .shadow-box1{
+    display: none; 
+}
+
+#input1:checked ~ .header .header__points {
+    top: -60px;
+}
+#input9:checked ~ .header .header__points {
+    top: -120px;
+}
+#input11:checked ~ .header .header__points {
+    top: -180px;
+}
+#input2:checked ~ .header .header__points {
+    top: -240px;
+}
+#input3:checked ~ .header .header__points {
+    top: -300px;
+}
+#input16:checked ~ .header .header__points {
+    top: -360px;
+}
+#input4:checked ~ .header .header__points {
+    top: -420px;
+}
+#input5:checked ~ .header .header__points {
+    top: -480px;
+}
+#input8:checked ~ .header .header__points {
+    top: -540px;
+}
+#input15:checked ~ .header .header__points {
+    top: -600px;
+}
+#input12:checked ~ .header .header__points {
+    top: -660px;
+}
+#input6:checked ~ .header .header__points {
+    top: -720px;
+}
+#input10:checked ~ .header .header__points {
+    top: -780px;
+}
+#input7:checked ~ .header .header__points {
+    top: -840px;
+}
+#input13:checked ~ .header .header__points {
+    top: -900px;
+}
+#input14:checked ~ .header .header__points {
+    top: -960px;
+}
+#input17:checked ~ .header .header__points {
+    top: -1020px;
+}
+#input25:checked ~ .header .header__points {
+    top: -1080px;
+}
+#input27:checked ~ .header .header__points {
+    top: -1140px;
+}
+#input18:checked ~ .header .header__points {
+    top: -1200px;
+}
+#input19:checked ~ .header .header__points {
+    top: -1260px;
+}
+#input32:checked ~ .header .header__points {
+    top: -1320px;
+}
+#input20:checked ~ .header .header__points {
+    top: -1380px;
+}
+#input21:checked ~ .header .header__points {
+    top: -1440px;
+}
+#input24:checked ~ .header .header__points {
+    top: -1500px;
+}
+#input31:checked ~ .header .header__points {
+    top: -1560px;
+}
+#input28:checked ~ .header .header__points {
+    top: -1620px;
+}
+#input22:checked ~ .header .header__points {
+    top: -1680px;
+}
+#input26:checked ~ .header .header__points {
+    top: -1740px;
+}
+#input23:checked ~ .header .header__points {
+    top: -1800px;
+}
+#input29:checked ~ .header .header__points {
+    top: -1860px;
+}
+#input30:checked ~ .header .header__points {
+    top: -1920px;
+}
+
+.game-wrapp{
+    position: relative;
+    width: 430px;
+    margin: 0 auto;
+    height: 540px;
+    padding: 20px 0 0 0;
+}
+
+.header__timer{
+    height: 10px;
+    position: relative;
+    background-color: #ebebeb; 
+    @include animation('timer 10s linear');
+}
+
+.game-over{
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    text-decoration: none;
+    padding-top: 150px;
+    top: -200%;
+    @include animation('show 1s cubic-bezier(.23,.68,.31,1.09) 10s 1 forwards');
+}
+.game-over__title{
+    font-size: 40px;
+    font-family: tahoma;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+.game-over__replay{
+    color: #fff;
+    font-size: 20px;
+    font-family: arial;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header__score-holder{
+    width: 65px;
+    height: 60px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+.header__points{
+    width: 100%;
+    font-size: 50px;
+    font-family: helvetica;
+    font-weight: bold;
+    color: #ebebeb;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    top:0;
+}
+
+@include keyframes(show){
+    from{
+        top:-200%;
+    }
+    to {
+        top:0%;
+    }
+}
+@include keyframes(timer){
+    from{
+        width:0%;
+    }
+    to {
+        width:100%;
+    }
+}
+
+
+

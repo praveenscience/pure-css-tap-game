@@ -1,0 +1,54 @@
+/*!
+ * Pure CSS tap game
+ * https://github.com/ufis/pure-css-tap-game
+ *
+ * Copyright 2014, Justas Kuizinas
+ * 
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }   
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin score-counter($length) {
+    $max: $length;
+    $top: 0;
+
+    @for $i from 1 through $max {
+        #input#{$i}:checked ~ .header .header__points{
+            top: #{$top}px;
+        }
+        $top: $top - 60;
+    }
+
+}

@@ -1,0 +1,523 @@
+/*!
+ * Pure CSS tap game
+ * https://github.com/ufis/pure-css-tap-game
+ *
+ * Copyright 2014, Justas Kuizinas
+ * 
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+/* line 10, ../sass/_base.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 13, ../sass/_base.scss */
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #8D8D8D;
+}
+
+/* line 18, ../sass/_base.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 23, ../sass/_base.scss */
+.fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 30, ../sass/_base.scss */
+.hidden {
+  display: none;
+}
+
+/* line 33, ../sass/_base.scss */
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*!
+ * Pure CSS tap game
+ * https://github.com/ufis/pure-css-tap-game
+ *
+ * Copyright 2014, Justas Kuizinas
+ * 
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+/*!
+ * Pure CSS tap game
+ * https://github.com/ufis/pure-css-tap-game
+ *
+ * Copyright 2014, Justas Kuizinas
+ * 
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+/* line 14, ../sass/_modules.scss */
+.game {
+  position: relative;
+}
+
+/* line 17, ../sass/_modules.scss */
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: #ebebeb;
+}
+
+/* line 25, ../sass/_modules.scss */
+#start:target {
+  display: none;
+}
+
+/* line 30, ../sass/_modules.scss */
+.box1, .box2, .box3, .box4 {
+  top: 0;
+}
+
+/* line 33, ../sass/_modules.scss */
+.box5, .box6, .box7, .box8 {
+  top: 110px;
+}
+
+/* line 36, ../sass/_modules.scss */
+.box9, .box10, .box11, .box12 {
+  top: 220px;
+}
+
+/* line 39, ../sass/_modules.scss */
+.box13, .box14, .box15, .box16 {
+  top: 330px;
+}
+
+/* line 43, ../sass/_modules.scss */
+.box1, .box5, .box9, .box13 {
+  left: 0;
+}
+
+/* line 46, ../sass/_modules.scss */
+.box2, .box6, .box10, .box14 {
+  left: 110px;
+}
+
+/* line 49, ../sass/_modules.scss */
+.box3, .box7, .box11, .box15 {
+  left: 220px;
+}
+
+/* line 52, ../sass/_modules.scss */
+.box4, .box8, .box12, .box16 {
+  left: 330px;
+}
+
+/* line 56, ../sass/_modules.scss */
+.game-box {
+  cursor: pointer;
+  background-color: #1DE2E2;
+}
+
+/* line 61, ../sass/_modules.scss */
+.shadow-box1 {
+  display: none;
+}
+
+/* line 64, ../sass/_modules.scss */
+.input:checked ~ .game .shadow-box1 {
+  display: block;
+}
+
+/* line 67, ../sass/_modules.scss */
+.game-box-layer2 {
+  display: none;
+}
+
+/* line 70, ../sass/_modules.scss */
+.input-layer2:checked ~ .game .game-box-layer2 {
+  display: block;
+}
+
+/* line 73, ../sass/_modules.scss */
+#input14:checked ~ .game .game-box-layer2 {
+  display: block;
+}
+
+/* line 107, ../sass/_modules.scss */
+#input1:checked ~ .game .shadow-box9,
+#input9:checked ~ .game .shadow-box11,
+#input11:checked ~ .game .shadow-box2,
+#input2:checked ~ .game .shadow-box3,
+#input3:checked ~ .game .shadow-box16,
+#input16:checked ~ .game .shadow-box4,
+#input4:checked ~ .game .shadow-box5,
+#input5:checked ~ .game .shadow-box8,
+#input8:checked ~ .game .shadow-box15,
+#input15:checked ~ .game .shadow-box12,
+#input12:checked ~ .game .shadow-box6,
+#input6:checked ~ .game .shadow-box10,
+#input10:checked ~ .game .shadow-box7,
+#input7:checked ~ .game .shadow-box13,
+#input13:checked ~ .game .shadow-box14,
+#input14:checked ~ .game .shadow-box1,
+#input17:checked ~ .game .shadow-box9,
+#input25:checked ~ .game .shadow-box11,
+#input27:checked ~ .game .shadow-box2,
+#input18:checked ~ .game .shadow-box3,
+#input19:checked ~ .game .shadow-box16,
+#input32:checked ~ .game .shadow-box4,
+#input20:checked ~ .game .shadow-box5,
+#input21:checked ~ .game .shadow-box8,
+#input24:checked ~ .game .shadow-box15,
+#input31:checked ~ .game .shadow-box12,
+#input28:checked ~ .game .shadow-box6,
+#input22:checked ~ .game .shadow-box10,
+#input26:checked ~ .game .shadow-box7,
+#input23:checked ~ .game .shadow-box13,
+#input29:checked ~ .game .shadow-box14,
+#input30:checked ~ .game .shadow-box1 {
+  display: none;
+}
+
+/* line 111, ../sass/_modules.scss */
+#input1:checked ~ .header .header__points {
+  top: -60px;
+}
+
+/* line 114, ../sass/_modules.scss */
+#input9:checked ~ .header .header__points {
+  top: -120px;
+}
+
+/* line 117, ../sass/_modules.scss */
+#input11:checked ~ .header .header__points {
+  top: -180px;
+}
+
+/* line 120, ../sass/_modules.scss */
+#input2:checked ~ .header .header__points {
+  top: -240px;
+}
+
+/* line 123, ../sass/_modules.scss */
+#input3:checked ~ .header .header__points {
+  top: -300px;
+}
+
+/* line 126, ../sass/_modules.scss */
+#input16:checked ~ .header .header__points {
+  top: -360px;
+}
+
+/* line 129, ../sass/_modules.scss */
+#input4:checked ~ .header .header__points {
+  top: -420px;
+}
+
+/* line 132, ../sass/_modules.scss */
+#input5:checked ~ .header .header__points {
+  top: -480px;
+}
+
+/* line 135, ../sass/_modules.scss */
+#input8:checked ~ .header .header__points {
+  top: -540px;
+}
+
+/* line 138, ../sass/_modules.scss */
+#input15:checked ~ .header .header__points {
+  top: -600px;
+}
+
+/* line 141, ../sass/_modules.scss */
+#input12:checked ~ .header .header__points {
+  top: -660px;
+}
+
+/* line 144, ../sass/_modules.scss */
+#input6:checked ~ .header .header__points {
+  top: -720px;
+}
+
+/* line 147, ../sass/_modules.scss */
+#input10:checked ~ .header .header__points {
+  top: -780px;
+}
+
+/* line 150, ../sass/_modules.scss */
+#input7:checked ~ .header .header__points {
+  top: -840px;
+}
+
+/* line 153, ../sass/_modules.scss */
+#input13:checked ~ .header .header__points {
+  top: -900px;
+}
+
+/* line 156, ../sass/_modules.scss */
+#input14:checked ~ .header .header__points {
+  top: -960px;
+}
+
+/* line 159, ../sass/_modules.scss */
+#input17:checked ~ .header .header__points {
+  top: -1020px;
+}
+
+/* line 162, ../sass/_modules.scss */
+#input25:checked ~ .header .header__points {
+  top: -1080px;
+}
+
+/* line 165, ../sass/_modules.scss */
+#input27:checked ~ .header .header__points {
+  top: -1140px;
+}
+
+/* line 168, ../sass/_modules.scss */
+#input18:checked ~ .header .header__points {
+  top: -1200px;
+}
+
+/* line 171, ../sass/_modules.scss */
+#input19:checked ~ .header .header__points {
+  top: -1260px;
+}
+
+/* line 174, ../sass/_modules.scss */
+#input32:checked ~ .header .header__points {
+  top: -1320px;
+}
+
+/* line 177, ../sass/_modules.scss */
+#input20:checked ~ .header .header__points {
+  top: -1380px;
+}
+
+/* line 180, ../sass/_modules.scss */
+#input21:checked ~ .header .header__points {
+  top: -1440px;
+}
+
+/* line 183, ../sass/_modules.scss */
+#input24:checked ~ .header .header__points {
+  top: -1500px;
+}
+
+/* line 186, ../sass/_modules.scss */
+#input31:checked ~ .header .header__points {
+  top: -1560px;
+}
+
+/* line 189, ../sass/_modules.scss */
+#input28:checked ~ .header .header__points {
+  top: -1620px;
+}
+
+/* line 192, ../sass/_modules.scss */
+#input22:checked ~ .header .header__points {
+  top: -1680px;
+}
+
+/* line 195, ../sass/_modules.scss */
+#input26:checked ~ .header .header__points {
+  top: -1740px;
+}
+
+/* line 198, ../sass/_modules.scss */
+#input23:checked ~ .header .header__points {
+  top: -1800px;
+}
+
+/* line 201, ../sass/_modules.scss */
+#input29:checked ~ .header .header__points {
+  top: -1860px;
+}
+
+/* line 204, ../sass/_modules.scss */
+#input30:checked ~ .header .header__points {
+  top: -1920px;
+}
+
+/* line 208, ../sass/_modules.scss */
+.game-wrapp {
+  position: relative;
+  width: 430px;
+  margin: 0 auto;
+  height: 540px;
+  padding: 20px 0 0 0;
+}
+
+/* line 216, ../sass/_modules.scss */
+.header__timer {
+  height: 10px;
+  position: relative;
+  background-color: #ebebeb;
+  -webkit-animation: timer 10s linear;
+  -moz-animation: timer 10s linear;
+  -o-animation: timer 10s linear;
+  animation: timer 10s linear;
+}
+
+/* line 223, ../sass/_modules.scss */
+.game-over {
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  text-decoration: none;
+  padding-top: 150px;
+  top: -200%;
+  -webkit-animation: show 1s cubic-bezier(.23,.68,.31,1.09) 10s 1 forwards;
+  -moz-animation: show 1s cubic-bezier(.23,.68,.31,1.09) 10s 1 forwards;
+  -o-animation: show 1s cubic-bezier(.23,.68,.31,1.09) 10s 1 forwards;
+  animation: show 1s cubic-bezier(.23,.68,.31,1.09) 10s 1 forwards;
+}
+
+/* line 231, ../sass/_modules.scss */
+.game-over__title {
+  font-size: 40px;
+  font-family: tahoma;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+/* line 240, ../sass/_modules.scss */
+.game-over__replay {
+  color: #fff;
+  font-size: 20px;
+  font-family: arial;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 248, ../sass/_modules.scss */
+.header__score-holder {
+  width: 65px;
+  height: 60px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+/* line 254, ../sass/_modules.scss */
+.header__points {
+  width: 100%;
+  font-size: 50px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #ebebeb;
+  text-align: center;
+  line-height: 60px;
+  position: relative;
+  top: 0;
+}
+
+@-webkit-keyframes show {
+  /* line 267, ../sass/_modules.scss */
+  from {
+    top: -200%;
+  }
+
+  /* line 270, ../sass/_modules.scss */
+  to {
+    top: 0%;
+  }
+}
+
+@-moz-keyframes show {
+  /* line 267, ../sass/_modules.scss */
+  from {
+    top: -200%;
+  }
+
+  /* line 270, ../sass/_modules.scss */
+  to {
+    top: 0%;
+  }
+}
+
+@-o-keyframes show {
+  /* line 267, ../sass/_modules.scss */
+  from {
+    top: -200%;
+  }
+
+  /* line 270, ../sass/_modules.scss */
+  to {
+    top: 0%;
+  }
+}
+
+@keyframes show {
+  /* line 267, ../sass/_modules.scss */
+  from {
+    top: -200%;
+  }
+
+  /* line 270, ../sass/_modules.scss */
+  to {
+    top: 0%;
+  }
+}
+
+@-webkit-keyframes timer {
+  /* line 275, ../sass/_modules.scss */
+  from {
+    width: 0%;
+  }
+
+  /* line 278, ../sass/_modules.scss */
+  to {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes timer {
+  /* line 275, ../sass/_modules.scss */
+  from {
+    width: 0%;
+  }
+
+  /* line 278, ../sass/_modules.scss */
+  to {
+    width: 100%;
+  }
+}
+
+@-o-keyframes timer {
+  /* line 275, ../sass/_modules.scss */
+  from {
+    width: 0%;
+  }
+
+  /* line 278, ../sass/_modules.scss */
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes timer {
+  /* line 275, ../sass/_modules.scss */
+  from {
+    width: 0%;
+  }
+
+  /* line 278, ../sass/_modules.scss */
+  to {
+    width: 100%;
+  }
+}
